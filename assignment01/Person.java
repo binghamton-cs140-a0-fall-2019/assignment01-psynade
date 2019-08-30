@@ -64,4 +64,11 @@ public class Person {
 	}
 // TODO provide the getter methods for placeDob and address 
 
+	public DateAndPlaceOfBirth getPlaceDob() {
+		return placeDob;
+	}
+	
+	public StreetUSAddress getAddress() {
+			return address;
+	}
 }
