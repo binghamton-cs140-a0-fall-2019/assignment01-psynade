@@ -69,6 +69,53 @@ public class PlaceDOBTester {
 	try(var output =new PrintWriter(new FileOutputStream(
 			    new File("output.txt"), true /* true means append to file */))) {
 			output.println("\nTESTS FOR DateAndPlaceOfBirth.java:");
+			// System.out.println test for all the objects
+	output.println(placeDob1);
+	output.println(placeDob2);
+	output.println(placeDob3);
+	output.println(placeDob4);
+	output.println(placeDob5);
+	output.println();
+	
+	// Test for .olderThan method
+	output.println(placeDob1.olderThan(placeDob2));
+	output.println(placeDob1.olderThan(placeDob3));
+	output.println(placeDob1.olderThan(placeDob4));
+	output.println(placeDob1.olderThan(placeDob5));
+	output.println(placeDob2.olderThan(placeDob3));
+	output.println(placeDob2.olderThan(placeDob4));
+	output.println(placeDob2.olderThan(placeDob5));
+	output.println(placeDob3.olderThan(placeDob4));
+	output.println(placeDob3.olderThan(placeDob5));
+	output.println(placeDob4.olderThan(placeDob5));
+	output.println(".olderThan done");
+
+
+	// Test for .youngerThan method
+	output.println(placeDob1.youngerThan(placeDob2));
+	output.println(placeDob1.youngerThan(placeDob3));
+	output.println(placeDob1.youngerThan(placeDob4));
+	output.println(placeDob1.youngerThan(placeDob5));
+	output.println(placeDob2.youngerThan(placeDob3));
+	output.println(placeDob2.youngerThan(placeDob4));
+	output.println(placeDob2.youngerThan(placeDob5));
+	output.println(placeDob3.youngerThan(placeDob4));
+	output.println(placeDob3.youngerThan(placeDob5));
+	output.println(placeDob4.youngerThan(placeDob5));
+	output.println(".youngerThan done");
+
+	//Test for .hasSameBirthDateAs
+	output.println(placeDob1.hasSameBirthDateAs(placeDob2));
+	output.println(placeDob1.hasSameBirthDateAs(placeDob3));
+	output.println(placeDob1.hasSameBirthDateAs(placeDob4));
+	output.println(placeDob1.hasSameBirthDateAs(placeDob5));
+	output.println(placeDob2.hasSameBirthDateAs(placeDob3));
+	output.println(placeDob2.hasSameBirthDateAs(placeDob4));
+	output.println(placeDob2.hasSameBirthDateAs(placeDob5));
+	output.println(placeDob3.hasSameBirthDateAs(placeDob4));
+	output.println(placeDob3.hasSameBirthDateAs(placeDob5));
+	output.println(placeDob4.hasSameBirthDateAs(placeDob5));
+	output.println("hasSameBirthDateAs done");
 
 		//Copy all your lines above, add an extra "2" to every variable name
 		// and replace every System.out.print or System.out.println
